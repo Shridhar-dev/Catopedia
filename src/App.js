@@ -8,8 +8,7 @@ const st ={
 }
 
 const sty ={
-    textAlign:"center",
-    padding:10
+    textAlign:"center"
     
 }
 
