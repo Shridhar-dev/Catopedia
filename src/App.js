@@ -1,26 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const st ={
+    marginLeft : 430
+    
 }
 
+const sty ={
+    marginLeft : 650,
+    padding:10
+    
+}
+
+
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            cat:[]
+        }
+        this.handleChange = this.handleChange.bind(this)
+    }
+    handleChange(){
+        
+        fetch("https://api.thecatapi.com/v1/images/search")
+        .then(response =>response.json())
+        .then(data => {
+            this.setState({
+                cat: data[0].url
+            })
+        })
+    }
+    render(){
+        const text = this.state.cat
+        return(
+            <div>
+            <img src={this.state.cat} height="500" width="500" style={st} />
+            
+            <br />
+           <button onClick ={this.handleChange} style={sty}>Generate</button>
+            <br />
+            <br />
+            </div>
+        )
+    }
+
+}
 export default App;
