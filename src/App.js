@@ -3,12 +3,12 @@ import React from 'react';
 import './App.css';
 
 const st ={
-    marginLeft : 430
+    textAlign : "center"
     
 }
 
 const sty ={
-    marginLeft : 650,
+    textAlign:"center",
     padding:10
     
 }
@@ -36,10 +36,13 @@ class App extends React.Component{
         const text = this.state.cat
         return(
             <div>
+            <div>
             <img src={this.state.cat} height="500" width="500" style={st} />
-            
+            </div>
             <br />
+            <div>
            <button onClick ={this.handleChange} style={sty}>Generate</button>
+            </div>
             <br />
             <br />
             </div>
