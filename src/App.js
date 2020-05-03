@@ -13,6 +13,11 @@ const sty ={
     
 }
 
+const styles ={
+    padding:10
+    
+}
+
 
 class App extends React.Component{
     constructor(){
@@ -41,7 +46,7 @@ class App extends React.Component{
             </div>
             <br />
             <div style={sty}>
-           <button onClick ={this.handleChange} >Generate</button>
+           <button onClick ={this.handleChange} style={styles} >Generate</button>
             </div>
             <br />
             <br />
