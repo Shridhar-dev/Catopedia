@@ -36,12 +36,12 @@ class App extends React.Component{
         const text = this.state.cat
         return(
             <div>
-            <div>
-            <img src={this.state.cat} height="500" width="500" style={st} />
+            <div style={st}>
+            <img src={this.state.cat} height="500" width="500"  />
             </div>
             <br />
-            <div>
-           <button onClick ={this.handleChange} style={sty}>Generate</button>
+            <div style={sty}>
+           <button onClick ={this.handleChange} >Generate</button>
             </div>
             <br />
             <br />
