@@ -3,18 +3,15 @@ import React from 'react';
 import './App.css';
 
 const st ={
-    textAlign : "center"
+    display:"flex",
+    justifyContent:"center",
+    objectFit:"contain"
     
 }
 
 const sty ={
-    textAlign:"center"
-    
-}
-
-const styles ={
-    padding:10
-    
+    display:"flex",
+    justifyContent:"center"
 }
 
 
@@ -40,13 +37,13 @@ class App extends React.Component{
         const text = this.state.cat
         return(
             <div>
-            <div style={st}>
+                <div style={st}>
             <img src={this.state.cat} height="500" width="500"  />
             </div>
             <br />
             <div style={sty}>
-           <button onClick ={this.handleChange} style={styles} >Generate</button>
-            </div>
+           <button onClick ={this.handleChange} style={{padding:10}}>Generate</button>
+           </div>
             <br />
             <br />
             </div>
@@ -55,3 +52,4 @@ class App extends React.Component{
 
 }
 export default App;
+
