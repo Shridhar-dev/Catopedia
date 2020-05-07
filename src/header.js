@@ -7,7 +7,10 @@ const styles = {
     backgroundColor : "black",
     textAlign: "center",
     margin:0,
-    fontSize:50
+    fontSize:50,
+    display:flex,
+    justifyContent:"center",
+    flex:1
 }
 const styler = {
     textAlign : "center",
