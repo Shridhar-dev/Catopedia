@@ -19,7 +19,7 @@ class App extends React.Component{
     constructor(){
         super()
         this.state={
-            cat:[]
+            cat:"Capture.png"
         }
         this.handleChange = this.handleChange.bind(this)
     }
