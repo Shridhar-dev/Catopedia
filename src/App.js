@@ -38,7 +38,7 @@ class App extends React.Component{
         return(
             <div>
                 <div style={st}>
-            <img src={this.state.cat} height="500" width="500"  />
+            <img src={this.state.cat} height="500" width="500" class="image"  />
             </div>
             <br />
             <div style={sty}>
