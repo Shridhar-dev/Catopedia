@@ -5,7 +5,7 @@ import './App.css';
 const st ={
     display:"flex",
     justifyContent:"center",
-    objectFit:"contain"
+    flex:1
     
 }
 
@@ -19,7 +19,7 @@ class App extends React.Component{
     constructor(){
         super()
         this.state={
-            cat:"Capture.png"
+            cat:[]
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -38,7 +38,7 @@ class App extends React.Component{
         return(
             <div>
                 <div style={st}>
-            <img src={this.state.cat} height="500" width="500" class="image"  />
+            <img src={this.state.cat} height="500px" width="500px" class="image"   />
             </div>
             <br />
             <div style={sty}>
