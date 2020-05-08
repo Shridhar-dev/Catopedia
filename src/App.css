@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.image{
+  height: 500px;
+  width:500px
+}
+@media only screen and (max-width: 720px) {
+  .image{
+    height: 400px;
+    width:400px
+  }
+}
